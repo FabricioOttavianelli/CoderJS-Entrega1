@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizando</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <p> Tu lista de tareas y calculadora favorita </p>
+    </header>
+    <main>
+        <h1>Organizando</h1>
+        
+        <section> 
+            <h2>Tareas</h2>
+
+            <label for="tarea">Tarea a realizar</label>
+            <input type="text" name="tarea" id="tarea">
+            <button id="agregar" >Agregar a la lista</button>
+
+            <h3>Tareas a realizar</h3>
+
+            <div class="list">
+
+                <ul id="todolist">
+
+                </ul>
+            </div>
+
+            <label for="tareaRealizada">Tarea realizada</label>
+            <select name="tareaRealizada" id="tareaRealizada">
+
+            </select>
+            <button id="eliminar" >Eliminar</button>
+
+        </section>
+
+        <section>
+            <h2>Calculadora</h2>
+
+            <div>
+
+            <input type="number" name="num1" id="num1">
+            <select name="calculo" id="calculo">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" name="num2" id="num2">
+            </div>
+        
+            <button id="calcular">Calcular</button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+       
+
+    </main>
+    <footer>
+
+        <p> La organización hace al maestro </p>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
